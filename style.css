@@ -1,0 +1,457 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ /*       ===========<Header Section Start From  Here >===========
+=====================================================================*/
+.header-section{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#6c5ce7,#a29bfe);
+  clip-path: polygon(0 0,100% 0, 100% 55%, 0% 100%);
+  position: relative;
+}
+
+
+
+    /*========< Navigation menu Style Start From Here >=========*/
+nav{
+  width: 100%;
+  height: 10vh;
+  background: #fd79a8;
+  position: relative;
+}
+
+nav ul{
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+  padding: 8px 20px;
+  border: 1px solid #6c5ce7;
+  color: #a29bfe;
+  background: linear-gradient(#6c5ce7, #a29bfe);
+  transition: 0.5s;
+}
+
+nav ul li a:hover{
+    border: 1px solid #fff;
+      color: #fff;
+      background: #6c5ce7;
+}
+  /*========< Navigation menu Style End Here >=========*/
+
+
+
+.header-section img{
+  position: absolute;
+  left: 60%;
+  top: 11%;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.header-section img:hover{
+ border: 1px solid #fd79a8;
+}
+
+
+
+ /*========< Portfolio text Style Start From Here >=========*/
+
+.header-section h4{
+  position: absolute;
+    top: 50%;
+    left: 12%;
+    font-size: 40px;
+    border: 1px solid transparent;
+    padding: 3px;
+    color: #dfe6e9;
+}
+
+
+.header-section h5 {
+  width: 0ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 10s steps(27) infinite alternate;
+  border-right: 3px solid black;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 3px;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  font-size: 40px;
+  color: #ff126d;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0ch;
+    }
+  
+    50% {
+      width: 25ch;
+      /* Console.log -->  ('Personal Portfolio Template'.length) ----- then enter button click korlei koyta word ase ber count hoye jabe */
+    }
+  }
+
+ /*========< Portfolio text End Here >=========*/
+
+
+
+
+ /*========< H Logo Style Start From Here >=========*/
+.logo-section h3{
+  font-size: 30px;
+  display: inline-block;
+  margin-top: 3px;
+  margin-left: 7%;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #6c5ce7;
+  z-index: 1;
+}
+
+.cross{
+  position: absolute;
+  top: 0;
+  left: 8.5%;
+  transform: skewX(-45deg);
+  width: 4px;
+  height: 63px;
+  background: #fd79a8;
+}
+
+
+.logo-section::before,
+.logo-section::after {
+
+  content: ' ';
+  padding: 40px;
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  display: block;
+  transform: translateX(-50%) translateY(-50%) rotate(0);
+
+  animation: spin 6s alternate infinite ease-in-out;
+}
+
+.logo-section::before {
+  border-top: 15px solid #ff126d;
+  border-left: 15px solid #ff126d;
+
+}
+
+.logo-section::after {
+  border-bottom: 15px solid #ff126d;
+  border-right: 15px solid #ff126d;
+  z-index: -1;
+
+}
+
+@keyframes spin {
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+ /*========< H Logo Style End Here >=========*/
+
+
+
+
+ /*========< Welcome text Style Start From Here >=========*/
+
+.header-section h1 {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  font-size: 40px;
+  color: #fff;
+
+}
+ /*========< Welcome text Style End Here >=========*/
+
+
+
+ /*========< Hasan"s World text Style Start From Here >=========*/
+
+.header-section h2{
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 33%;
+}
+
+  /*========< Hasan"s World text Style End Here >=========*/
+
+
+
+
+ /*       ===========<Header Section End Here >===========
+=====================================================================*/
+
+
+
+
+
+ /*       ===========< Middle Section Start From  Here >===========
+=====================================================================*/
+
+
+.middle-section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.col-1 {
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transition: 0.5s;
+}
+.col-1 img{
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 250px;
+  height: 300px;
+}
+
+.col-1 p{
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+.col-1:hover{
+  box-shadow: 0px 0px 25px 14px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+
+.col-2 {
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.col-2 img {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 250px;
+  height: 300px;
+}
+
+.col-2 p {
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+.col-2:hover {
+  box-shadow: 0px 0px 25px 14px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+
+
+.col-3 {
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.col-3 img {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 250px;
+  height: 300px;
+}
+
+.col-3 p {
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+
+.col-3:hover {
+  box-shadow: 0px 0px 25px 14px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+
+ /*       ===========< Middle Section End  Here >===========
+=====================================================================*/
+
+
+
+
+
+
+
+ /*       ===========< Footer Section Start From  Here >===========
+=====================================================================*/
+
+
+.footer-section{
+  width: 100%;
+  height: 40vh;
+  background: #000;
+  position: relative;
+}
+
+.fab {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-left: 40px;
+
+}
+
+.fa-youtube:hover {
+  color: red;
+}
+
+.fa-facebook:hover {
+  color: #1e3799;
+}
+
+.fa-twitter:hover {
+  color: #34ace0;
+}
+
+.fa-instagram:hover {
+  color: #ff126d;
+}
+
+.fa-linkedin:hover {
+  color: #82ccdd;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer-middle-section h1{
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  left: 45%;
+
+}
+
+
+.footer-middle-section h2 {
+  color: #fff;
+  position: absolute;
+  top: 70px;
+  left: 39%;
+
+}
+
+
+
+.footer-middle-section h3 {
+  color: #fff;
+  position: absolute;
+  top: 80%;
+  left: 39%;
+
+}
+
+.footer-middle-section a {
+  color: #34ace0;
+  text-decoration: none;
+  background: linear-gradient(#ff126d , #eb709f);
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  padding: 14px 55px;
+  border: 1px solid #ff126d;
+  transition: 0.5s ;
+
+}
+
+.footer-middle-section a:hover{
+  color: #fff;
+  background: #ff126d;
+  border: 1px solid #fff;
+}
+
+
+.footer-right-section a h1{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  right: 91px;
+  top: 20%;
+}
+
+.footer-right-section a h2 {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  right: 70px;
+  top: 40%;
+}
+
+.footer-right-section a h3 {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  right: 156px;
+  top: 60%;
+}
+
+.footer-right-section a h4 {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  right: 170px;
+  top: 80%;
+}
