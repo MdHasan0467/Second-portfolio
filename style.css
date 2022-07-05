@@ -42,7 +42,6 @@ nav ul li a{
   border: 1px solid #6c5ce7;
   color: #a29bfe;
   background: linear-gradient(#6c5ce7, #a29bfe);
-  transition: 0.5s;
 }
 
 nav ul li a:hover{
